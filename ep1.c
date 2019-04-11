@@ -3,7 +3,7 @@
 /* Implementação do Algoritmo de Dijkstra                */
 /* Implementado pelos alunos:			                 */
 /* Ana Carolina, Luisa Macedo e Vitor Guimarães          */
-/* Data: 05/10/2017									     */
+/* Data: 11/04/2019									     */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -37,7 +37,7 @@ void dijkstra(int vertices, int origem, int destino, int *custos){
 	//Insere o novo vértice que se conhece o caminho mínimo no conjunto z  
 	while(v != destino-1 && min != INFINITO){ 
 		min = INFINITO; 
-		
+	
 		for(i = 0; i < vertices; i++){
 			if(z[i] == 0){ 
 				if(dist[i] >= 0 && dist[i] < min){ 
